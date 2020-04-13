@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial scale=1.0">
+   <link rel="stylesheet"
+ href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+  <link rel="stylesheet" href="inscriptionstyle.css">
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+  <title>Créer un compte</title>
+</head>
+<body>
+  <header>
+
+    <nav class="navbar navbar-expand-md">
+ <a class="navbar-brand" href="#"><img src="logoebayece.png" width="200" height="50" /></a> 
+ <button class="navbar-toggler navbar-dark" type="button" data-toggle="collapse" data-target="#main-navigation">
+ <span class="navbar-toggler-icon"></span>
+ </button>
+ <div class="collapse navbar-collapse" id="main-navigation">
+ <ul class="navbar-nav">
+ <div class="dropdown">
+  <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Catégories</button>
+  <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+    <a class="dropdown-item" href="#">Féraille et trésor</a>
+    <a class="dropdown-item" href="#">Bon pour le musée</a>
+    <a class="dropdown-item" href="#">Accessoires VIP</a>
+  </div>
+</div>
+ <li class="nav-item"><a class="nav-link" href="#">Achat</a></li>
+ <li class="nav-item"><a class="nav-link" href="#">Vendre</a></li>
+ <li class="nav-item"><a class="nav-link" href="#">Votre compte</a></li>
+ <li class="nav-item"><a class="nav-link" href="#">Admin</a></li> 
+ <li class="nav-item"><a class="nav-link" href="pdg.html">Se connecter</a></li>
+ <li class="nav-item"><a class="nav-link" href="#"><img src="logopanier.png" width="25" height="25" /></a></li> 
+ </ul>
+ </div>
+</nav>
+  <form action="eb.php" method="post"> 
+<div class="container">
+  <div class="Contact">
+      <h2>Créer un compte</h2><br>
+      <h3>Contact</h3>
+      <input type="text" name="Nom" placeholder="Nom" required><br>
+      <input type="email" name="mail" placeholder="Addresse Mail"required><br>
+      <input type="text" name="tel" placeholder="Numéro de Téléphone"required><br><br>
+  </div>
+    <div class="InfosPerso">
+      <h3>Informations personnelles</h3>
+     
+      <input type="text" name="adresse" placeholder="Adresse"required><br>
+      <input type="number" name="codep" placeholder="Code Postal"required><br>
+      <input type="text" name="pays" placeholder="Pays"required><br>
+      <input type="password" name="mdp" placeholder="Choisir mot de passe"required><br>
+      <input type="password" name="confmdp" placeholder="Entrez a nouveau votre mot de passe"required><br><br>
+    </div>
+
+    <div class="Paiment"> 
+      <h3> Informations de paiment</h3>
+      <input type="text" name="nomcarte" placeholder="Nom du titulaire"required><br>
+      <select name="type" placeholder="Type de Carte">
+                   <option name="option1">Type de Carte</option>
+                   <option name="option1">Visa</option>
+                   <option name="option2">MasterCard</option>
+                   <option name="option3">American Express</option>
+                   <option name="option4">Paypal</option>
+                 </select><br>
+      <input type="number" name="numcarte" placeholder="Numéro de la carte"required><br>
+      <input type="text" name="datefin" placeholder="Date d'expiration(MM/AA)"required><br>
+      <input type="number" name="code" min="100" max="9999" placeholder="Cryptogramme visuel"required><br>
+    </div>
+    <button name="button"> S'incrire </button> 
+    </header>  
+</div>  
+</form>
+</body>
+</html>
